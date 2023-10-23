@@ -6,10 +6,6 @@
 
 <p><strong>Data:</strong> <%= data_br(Date.today) %></p>
 
-<ul>
-  <li>
-    <%= link_to "Coin", coins_path %>
-  </li>
-</ul>
+<%= render "menu" %>
 
 <p>Você está no ambiente de <%= ambiente_rails %></p>
