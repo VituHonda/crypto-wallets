@@ -33,6 +33,21 @@ namespace :dev do
         description: "Bitcoin",
         acronym: "BTC",
         url_img:"https://cryptologos.cc/logos/dash-dash-logo.png"
+      },
+      {
+        description: "Tether USDt",
+        acronym: "USDT",
+        url_img:"https://cryptologos.cc/logos/tether-usdt-logo.png"
+      },
+      {
+        description: "BNB",
+        acronym: "BNB",
+        url_img:"https://cryptologos.cc/logos/bnb-bnb-logo.png"
+      },
+      {
+        description: "XRP",
+        acronym: "XRP",
+        url_img:"https://cryptologos.cc/logos/xrp-xrp-logo.png"
       }
     ]
 
