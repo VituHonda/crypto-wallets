@@ -27,6 +27,10 @@
   </div>
 
   <div>
+    <%= form.select("mining_type_id", MiningType.all.collect {|m| [m.description]}, {include_blank:true}) %>
+  </div>
+
+  <div>
     <%= form.submit %>
   </div>
 <% end %>
