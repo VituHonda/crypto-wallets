@@ -8,7 +8,7 @@ namespace :dev do
 
       show_spinner("Migrando DB ... ") {%x(rails db:migrate)}
 
-      show_spinner("Populando DB ... ") {%x(rails db:seed)}
+      %x(rails dev:add_coins)
     else
       puts "Voce nao esta no ambiente de desenvolvimento"
     end
@@ -70,4 +70,3 @@ namespace :dev do
   end
 
 end
-
