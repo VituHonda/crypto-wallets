@@ -9,6 +9,8 @@ namespace :dev do
       show_spinner("Migrando DB ... ") {%x(rails db:migrate)}
 
       %x(rails dev:add_coins)
+
+      %x(rails dev:add_mining_types)
     else
       puts "Voce nao esta no ambiente de desenvolvimento"
     end
@@ -58,7 +60,21 @@ namespace :dev do
     spinner.success("Concluido")
   end
 
+  task add_mining_types: :environment do
+    spinner = TTY::Spinner.new("[:spinner] Cadastrando tipos de mineração ...")
+    spinner.auto_spin
 
+    types = [
+      {description: "Proof of Work", acronym: "PoW"},
+      {description: "Proof of Stake", acronym: "PoS"},
+      {description: "Proof of Capacity", acronym: "PoC"}
+    ]
+
+    types.each do |type|
+      MiningType.find_or_create_by!(type)
+    end
+    spinner.success("Concluido")
+  end
 
 
   def show_spinner(msg_start,msg_end = "Concluido")
