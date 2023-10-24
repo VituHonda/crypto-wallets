@@ -8,9 +8,10 @@ namespace :dev do
 
       show_spinner("Migrando DB ... ") {%x(rails db:migrate)}
 
+      %x(rails dev:add_mining_types)
+
       %x(rails dev:add_coins)
 
-      %x(rails dev:add_mining_types)
     else
       puts "Voce nao esta no ambiente de desenvolvimento"
     end
@@ -24,32 +25,39 @@ namespace :dev do
       {
         description: "Bitcoin",
         acronym: "BTC",
-        url_img:"https://static.vecteezy.com/system/resources/previews/008/505/801/original/bitcoin-logo-color-illustration-png.png"
+        url_img:"https://static.vecteezy.com/system/resources/previews/008/505/801/original/bitcoin-logo-color
+-illustration-png.png",
+        mining_type: MiningType.all.sample
       },
       {
         description: "Ethereum",
         acronym: "ETH",
-        url_img:"https://cryptologos.cc/logos/ethereum-eth-logo.png"
+        url_img:"https://cryptologos.cc/logos/ethereum-eth-logo.png",
+        mining_type: MiningType.all.sample
       },
       {
         description: "Bitcoin",
         acronym: "BTC",
-        url_img:"https://cryptologos.cc/logos/dash-dash-logo.png"
+        url_img:"https://cryptologos.cc/logos/dash-dash-logo.png",
+        mining_type: MiningType.all.sample
       },
       {
         description: "Tether USDt",
         acronym: "USDT",
-        url_img:"https://cryptologos.cc/logos/tether-usdt-logo.png"
+        url_img:"https://cryptologos.cc/logos/tether-usdt-logo.png",
+        mining_type: MiningType.all.sample
       },
       {
         description: "BNB",
         acronym: "BNB",
-        url_img:"https://cryptologos.cc/logos/bnb-bnb-logo.png"
+        url_img:"https://cryptologos.cc/logos/bnb-bnb-logo.png",
+        mining_type: MiningType.all.sample
       },
       {
         description: "XRP",
         acronym: "XRP",
-        url_img:"https://cryptologos.cc/logos/xrp-xrp-logo.png"
+        url_img:"https://cryptologos.cc/logos/xrp-xrp-logo.png",
+        mining_type: MiningType.all.sample
       }
     ]
 
