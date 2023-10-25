@@ -1,2 +1,7 @@
 pt-BR:
   teste: "teste BR"
+  links:
+    edit: "Editar"
+    show: "Mostrar"
+    delete: "Apagar"
+    back: "Voltar"
