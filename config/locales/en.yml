@@ -6,3 +6,6 @@ en:
     show: "Show"
     delete: "Delete"
     back: "Back"
+  env:
+    development: "Development"
+    test: "Test"

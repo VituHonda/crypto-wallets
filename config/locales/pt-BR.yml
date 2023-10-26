@@ -5,3 +5,6 @@ pt-BR:
     show: "Mostrar"
     delete: "Apagar"
     back: "Voltar"
+  env:
+    development: "Desenvolvimento"
+    test: "Teste"

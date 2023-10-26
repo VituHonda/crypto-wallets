@@ -14,4 +14,4 @@
 
 <%= render "menu" %>
 
-<p>Você está no ambiente de <%= ambiente_rails %></p>
+<p>Você está no ambiente de <%= I18n.t("env.#{Rails.env}") %></p>
