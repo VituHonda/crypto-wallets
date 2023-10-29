@@ -5,4 +5,5 @@ pin "@hotwired/turbo-rails", to: "turbo.min.js", preload: true
 pin "@hotwired/stimulus", to: "stimulus.min.js", preload: true
 pin "@hotwired/stimulus-loading", to: "stimulus-loading.js", preload: true
 pin_all_from "app/javascript/controllers", under: "controllers"
-pin "jquery", to:"node_modules/jquery"
+pin "jquery", to:"../vendor/assets/jquery-3.7.1.js"
+pin "notify", to:"../vendor/assets/notify.js"
