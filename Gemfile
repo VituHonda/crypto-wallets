@@ -53,6 +53,8 @@ group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
   gem "tty-spinner"
   gem 'rails-i18n', '~> 7.0.0'
+  gem 'rails-assets-jquery', source: 'https://rails-assets.org'
+  gem 'rails-assets-notifyjs', source: 'https://rails-assets.org'
 end
 
 group :development do

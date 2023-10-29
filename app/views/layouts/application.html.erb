@@ -9,7 +9,7 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= stylesheet_link_tag "application", "data-turbo-track": "custom" %>
     <%= javascript_importmap_tags %>
-    <%= javascript_include_tag "custom" %>
+    <%#= javascript_include_tag "custom" %>
 
 
   </head>
@@ -17,5 +17,6 @@
   <h1>HEADDER - <%= params[:controller] %></h1>
     <%= yield %>
   <h1>FOOTER</h1>
+
   </body>
 </html>
