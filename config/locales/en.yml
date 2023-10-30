@@ -1,5 +1,10 @@
 en:
   hello: "Hello world"
+  welcome: "Welcome!!!"
+  app_description: "We are Crypto Wallets an app for you to register and track your cripto currency"
+  coins: "Coins"
+  mining_types: "Mining Types"
+  menu_guide: "To start select one of the options below"
   teste: "test EN"
   links:
     edit: "Edit"
