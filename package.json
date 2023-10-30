@@ -1,0 +1,14 @@
+{
+  "name": "crypto_wallets",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/VituHonda/crypto_wallets.git",
+  "author": "vituhonda <vitorutk@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "jquery": "^3.7.1",
+    "notify-js-legacy": "^0.4.1",
+    "popper.js": "^1.16.1"
+  }
+}
