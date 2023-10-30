@@ -1,5 +1,10 @@
 pt-BR:
   teste: "teste BR"
+  welcome: "Bem vindo!!!"
+  app_description: "Somos a Crypto wallets um app para você cadastrar e acompanhar as suas cripto moedas"
+  coins: "Moedas"
+  mining_types: "Tipos de mineração"
+  menu_guide: "Para começar selecione uma das opções abaixo"
   links:
     edit: "Editar"
     show: "Mostrar"
