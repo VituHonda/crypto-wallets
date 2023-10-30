@@ -1,15 +1,17 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Coins</h1>
+<div class="content">
+  <h1>Coins</h1>
 
-<h3>Data: <%= Date.today %></h3>
+  <h3>Data: <%= Date.today %></h3>
 
-<div class='table table-hover' id="coins">
-  <% @coins.each do |coin| %>
-    <%= render coin %>
-    <p><%= link_to "Show this coin", coin %></p>
-  <% end %>
+  <div class='table table-hover' id="coins">
+    <% @coins.each do |coin| %>
+      <%= render coin %>
+      <p><%= link_to "Show this coin", coin %></p>
+    <% end %>
+  </div>
+
+  <%= link_to "New coin", new_coin_path %>
+  <%= link_to "Home", welcome_index_path %>
 </div>
-
-<%= link_to "New coin", new_coin_path %>
-<%= link_to "Home", welcome_index_path %>
