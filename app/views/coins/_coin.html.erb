@@ -1,17 +1,13 @@
-<div id="<%= dom_id coin %>">
-  <p>
-    <strong>Description:</strong>
-    <%= coin.description %>
-    ---
-    <strong>Acronym:</strong>
-    <%= coin.acronym %>
-    ---
-    <strong>Url img:</strong>
-    <%#= coin.url_img %>
-    <%= image_tag coin.url_img, size: "40x40" %>
-    ---
-    <strong>Mining Type:</strong>
-    <%= coin.mining_type.description %>
-  </p>
+<tr>
+  <td><%= coin.id %></td>
+  <td><%= coin.description %></td>
+  <td><%= coin.acronym %></td>
+  <td><%= image_tag coin.url_img, size: "40x40" %></td>
+  <td><%= coin.mining_type.description %></td>
+  <td><%= link_to "Show", coin, class: "btn btn-primary" %></td>
+</tr>
 
-</div>
+
+
+
+

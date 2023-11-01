@@ -5,7 +5,17 @@ pt-BR:
   coins: "Moedas"
   mining_types: "Tipos de mineração"
   menu_guide: "Para começar selecione uma das opções abaixo"
+  date: "Data"
+  editing: "Editando Moeda"
+  table:
+    id: "ID"
+    description: "Descrição"
+    acronym: "Sigla"
+    url: "URL da Imagem"
+    img: "Imagem"
+    mining_type: "Tipo de Mineração"
   links:
+    new: "Nova Moeda"
     edit: "Editar"
     show: "Mostrar"
     delete: "Apagar"

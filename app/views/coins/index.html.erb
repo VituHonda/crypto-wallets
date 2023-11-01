@@ -1,17 +1,31 @@
+<div class="m-5">
 <p style="color: green"><%= notice %></p>
 
-<div class="content">
-  <h1>Coins</h1>
+  <h1><%= t(Coin.model_name.human) %></h1>
 
-  <h3>Data: <%= Date.today %></h3>
+  <h3> <%=t("date")%>: <%= Date.today %></h3>
 
-  <div class='table table-hover' id="coins">
+  <table class="table">
+    <thead>
+    <tr>
+      <th scope="col"><%= t("table.id") %></th>
+      <th scope="col"><%= t("table.description") %></th>
+      <th scope="col"><%= t("table.acronym") %></th>
+      <th scope="col"><%= t("table.img") %></th>
+      <th scope="col"><%= t("table.mining_type") %></th>
+    </tr>
+    </thead>
+    <tbody id="coins">
+
     <% @coins.each do |coin| %>
-      <%= render coin %>
-      <p><%= link_to "Show this coin", coin %></p>
+      <tr>
+        <%= render coin %>
+      </tr>
     <% end %>
-  </div>
 
-  <%= link_to "New coin", new_coin_path %>
-  <%= link_to "Home", welcome_index_path %>
+    </tbody>
+  </table>
+
+  <%= link_to t("links.new"), new_coin_path, class: "btn btn-primary" %>
+  <%= link_to t("links.back"), welcome_index_path, class: "btn btn-secondary" %>
 </div>

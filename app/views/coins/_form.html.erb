@@ -11,27 +11,27 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :description, style: "display: block" %>
-    <%= form.text_field :description %>
+  <div class="col-3">
+    <%= form.label :description, style: "display: block", class: "form-label" %>
+    <%= form.text_field :description, class: "form-control" %>
   </div>
 
-  <div>
-    <%= form.label :acronym, style: "display: block" %>
-    <%= form.text_field :acronym %>
+  <div class="col-3">
+    <%= form.label :acronym, style: "display: block", class: "form-label" %>
+    <%= form.text_field :acronym, class: "form-control" %>
   </div>
 
-  <div>
-    <%= form.label :url_img, style: "display: block" %>
-    <%= form.text_field :url_img %>
+  <div class="col-3">
+    <%= form.label :url_img, style: "display: block", class: "form-label" %>
+    <%= form.text_field :url_img, class: "form-control" %>
   </div>
 
-  <div>
-    <%= form.label :mining_type, style: "display: block" %>
-    <%= form.select("mining_type_id", @mining_type_options, {include_blank:true}) %>
+  <div class="col-3">
+    <%= form.label :mining_type, style: "display: block", class: "form-label" %>
+    <%= form.select("mining_type_id", @mining_type_options, {include_blank:true}, class: "form-select")%>
   </div>
 
-  <div>
-    <%= form.submit %>
+  <div class="mt-3">
+    <%= form.submit("enviar", class: "btn btn-primary")%>
   </div>
 <% end %>

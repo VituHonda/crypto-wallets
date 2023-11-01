@@ -1,10 +1,16 @@
-<h1>Editing coin</h1>
+<div class="ms-5">
 
-<%= render "form", coin: @coin %>
+  <h1><%= t("editing") %></h1>
 
-<br>
+  <%= render "form", coin: @coin %>
 
-<div>
-  <%= link_to t('links.show'), @coin %> |
-  <%= link_to t('links.back'), coins_path %>
+  <br>
+
+  <div>
+    <%= link_to t('links.show'), @coin, class: "btn btn-primary" %>
+    <%= link_to t('links.back'), coins_path, class: "btn btn-primary mx-1" %>
+  </div>
+
+
 </div>
+

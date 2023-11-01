@@ -6,7 +6,17 @@ en:
   mining_types: "Mining Types"
   menu_guide: "To start select one of the options below"
   teste: "test EN"
+  date: "Date"
+  editing: "Editing Coin"
+  table:
+    id: "ID"
+    description: "Description"
+    acronym: "Acronym"
+    url: "Image URL"
+    img: "Image"
+    mining_type: "Mining Type"
   links:
+    new: "New Coin"
     edit: "Edit"
     show: "Show"
     delete: "Delete"
