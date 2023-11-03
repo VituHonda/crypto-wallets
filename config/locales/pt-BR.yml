@@ -7,6 +7,7 @@ pt-BR:
   menu_guide: "Para começar selecione uma das opções abaixo"
   date: "Data"
   editing: "Editando Moeda"
+  editing_mine: "Editando Tipo de Mineração"
   table:
     id: "ID"
     description: "Descrição"
@@ -14,12 +15,14 @@ pt-BR:
     url: "URL da Imagem"
     img: "Imagem"
     mining_type: "Tipo de Mineração"
+    send: "Enviar"
   links:
     new: "Nova Moeda"
     edit: "Editar"
     show: "Mostrar"
     delete: "Apagar"
     back: "Voltar"
+    new_type: "Novo Tipo de Mineração"
   env:
     development: "Desenvolvimento"
     test: "Teste"

@@ -1,10 +1,32 @@
-<p style="color: green"><%= notice %></p>
+<div class="d-flex flex-column align-items-center justify-content-center text-center col-12">
 
-<%= render @mining_type %>
+  <table class="table">
+    <thead>
+    <tr>
+      <th scope="col"><%= t("table.id") %></th>
+      <th scope="col"><%= t("table.description") %></th>
+      <th scope="col"><%= t("table.acronym") %></th>
+    </tr>
+    </thead>
+    <tbody id="coins">
 
-<div>
-  <%= link_to "Edit this mining type", edit_mining_type_path(@mining_type) %> |
-  <%= link_to "Back to mining types", mining_types_path %>
+    <tr>
+      <%= render @mining_type %>
+    </tr>
 
-  <%= button_to "Destroy this mining type", @mining_type, method: :delete %>
+    </tbody>
+  </table>
+
+  <div class="m-3">
+    <%= link_to t("links.edit"), edit_mining_type_path(@mining_type), class: "btn btn-primary"%>
+  </div>
+
+  <div class="m-3">
+    <%= button_to t("links.delete"), @mining_type, method: :delete, class: "btn btn-danger" %>
+  </div>
+
+  <div class="m-3">
+    <%= link_to t("links.back"), mining_types_path, class: "btn btn-secondary"%>
+  </div>
+
 </div>

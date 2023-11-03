@@ -8,6 +8,7 @@ en:
   teste: "test EN"
   date: "Date"
   editing: "Editing Coin"
+  editing_mine: "Editing Mining Type"
   table:
     id: "ID"
     description: "Description"
@@ -15,12 +16,14 @@ en:
     url: "Image URL"
     img: "Image"
     mining_type: "Mining Type"
+    send: "Send"
   links:
     new: "New Coin"
     edit: "Edit"
     show: "Show"
     delete: "Delete"
     back: "Back"
+    new_type: "New Mining Type"
   env:
     development: "Development"
     test: "Test"

@@ -1,10 +1,17 @@
-<h1>Editing mining type</h1>
+<div class="ms-5">
 
-<%= render "form", mining_type: @mining_type %>
+  <h1><%= t("editing_mine") %></h1>
 
-<br>
+  <%= render "form", mining_type: @mining_type %>
 
-<div>
-  <%= link_to "Show this mining type", @mining_type %> |
-  <%= link_to "Back to mining types", mining_types_path %>
+  <br>
+
+  <div>
+    <%= link_to t("links.show"), @mining_type, class: "btn btn-primary" %>
+    <%= link_to t("mining_types"), mining_types_path, class: "btn btn-primary mx-3" %>
+  </div>
+
+
 </div>
+
+

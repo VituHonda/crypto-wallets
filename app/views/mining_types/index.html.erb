@@ -1,14 +1,31 @@
-<p style="color: green"><%= notice %></p>
+<div class="m-5">
+  <p style="color: green"><%= notice %></p>
 
-<h1>Mining types</h1>
+  <h1><%= t(Coin.model_name.human) %></h1>
 
-<div id="mining_types">
-  <% @mining_types.each do |mining_type| %>
-    <%= render mining_type %>
-    <p>
-      <%= link_to "Show this mining type", mining_type %>
-    </p>
-  <% end %>
+  <h3> <%=t("date")%>: <%= Date.today %></h3>
+
+  <table class="table">
+    <thead>
+    <tr>
+      <th scope="col"><%= t("table.id") %></th>
+      <th scope="col"><%= t("table.description") %></th>
+      <th scope="col"><%= t("table.acronym") %></th>
+    </tr>
+    </thead>
+    <tbody id="coins">
+
+    <% @mining_types.each do |mining_type| %>
+      <tr>
+        <%= render mining_type %>
+      </tr>
+    <% end %>
+
+
+    </tbody>
+  </table>
+
+  <%= link_to t("links.new_type"), new_mining_type_path, class: "btn btn-primary" %>
+  <%= link_to t("links.back"), welcome_index_path, class: "btn btn-secondary" %>
 </div>
 
-<%= link_to "New mining type", new_mining_type_path %>
